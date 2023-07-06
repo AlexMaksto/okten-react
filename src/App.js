@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// вивести всіх юзерів з плайсхолдеру
+// в кожного юзера має бути кнопка яка буде показувати пости цього юзера
+//
+// пости мають виводитись під компонетою Users (в App компоненті)
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React, {useState} from 'react';
+import Users from "./components/user/Users";
+import Posts from "./components/post/Posts";
+
+const App = () => {
+    const [userId, setUserId] = useState();
+    const userIdPost = (id) => {
+        setUserId(id);
+    }
+
+    console.log(userId)
+
+    return (
+        <>
+            <Users userIdPost={userIdPost}/>
+            <Posts userId={userId}/>
+        </>
+    );
+};
 
 export default App;
