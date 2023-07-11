@@ -1,18 +1,16 @@
-import React, {createContext} from 'react';
-import SubChild1_1 from "./SubChild1_1";
-
-export const SmthDate = createContext(null);
+import React, {useContext, useState} from 'react';
+import {SmthDate} from "../App";
 
 const SubChild2_2 = () => {
 
-    const contextDate = 'Today perfect day';
+    const dat = useContext(SmthDate);
+
+    const [date, setDate] = useState(dat);
+    setDate('Today perfect day');
 
     return (
-        <SmthDate.Provider value={contextDate}>
-            <div>
-                <SubChild1_1/>
-            </div>
-        </SmthDate.Provider>
+        <div>
+        </div>
     );
 };
 

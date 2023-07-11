@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {SmthDate} from "./SubChild2_2";
+import {SmthDate} from "../App";
 
 const SubChild1_1 = () => {
 

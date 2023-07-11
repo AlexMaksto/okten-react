@@ -7,17 +7,21 @@
 // Тепер завдання:
 //     З SubChild2_2 передати данні (будь-які) в SubChild1_1
 
-import React from 'react';
+import React, {createContext} from 'react';
 import Child1 from "./component/Child1";
 import Child2 from "./component/Child2";
 
+export const SmthDate = createContext(null);
 
 const App = () => {
+
     return (
-        <>
-            <Child1/>
-            <Child2/>
-        </>
+        <SmthDate.Provider value={''}>
+            <>
+                <Child1/>
+                <Child2/>
+            </>
+        </SmthDate.Provider>
     );
 };
 
