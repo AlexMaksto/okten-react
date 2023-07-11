@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SubChild2_1 = () => {
+const SubChild21 = () => {
 
     return (
         <div>
@@ -9,4 +9,4 @@ const SubChild2_1 = () => {
     );
 };
 
-export default SubChild2_1;
+export default SubChild21;

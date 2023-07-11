@@ -1,10 +1,10 @@
 import React from 'react';
 
-const SubChild1_2 = () => {
+const SubChild12 = () => {
     return (
         <div>
         </div>
     );
 };
 
-export default SubChild1_2;
+export default SubChild12;

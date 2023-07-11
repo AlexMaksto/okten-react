@@ -1,15 +1,15 @@
 import React, {useContext} from 'react';
-import {SmthDate} from "../App";
+import {Context} from "../App";
 
-const SubChild1_1 = () => {
+const SubChild11 = () => {
 
-    const day = useContext(SmthDate)
+    const {data} = useContext(Context)
 
     return (
         <div>
-            <p>{day}</p>
+            <p>{data}</p>
         </div>
     );
 };
 
-export default SubChild1_1;
+export default SubChild11;

@@ -1,12 +1,10 @@
-import React, {useContext, useState} from 'react';
-import {SmthDate} from "../App";
+import React, {useContext} from 'react';
+import {Context} from "../App";
 
-const SubChild2_2 = () => {
+const SubChild22 = () => {
 
-    const dat = useContext(SmthDate);
-
-    const [date, setDate] = useState(dat);
-    setDate('Today perfect day');
+    const {setData} = useContext(Context);
+    setData(() => `Today perfect day`);
 
     return (
         <div>
@@ -14,4 +12,4 @@ const SubChild2_2 = () => {
     );
 };
 
-export default SubChild2_2;
+export default SubChild22;
