@@ -24,9 +24,9 @@ const App = () => {
 
     return (
         <>
-            {users.length > 0 ? <Users
+            <Users
                 users={users}
-            /> : ''}
+            />
         </>
     );
 };

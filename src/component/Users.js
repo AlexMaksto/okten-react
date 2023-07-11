@@ -3,8 +3,6 @@ import User from "./User";
 
 const Users = ({users}) => {
 
-
-
     return (
         <>
             {users?.map((user, id) => {
