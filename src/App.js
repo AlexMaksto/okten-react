@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// Зробити компонент, в якому буде форма, за допомоги якої можливо створити новий комментар постовим запитом на http://jsonplaceholder.typicode.com/comments
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React, {useState} from 'react';
+import CommentForm from "./components/comment/CommentForm";
+import PostContainer from "./components/post/PostContainer";
+
+const App = () => {
+
+    const [postId, setPostId] = useState('');
+
+    return (
+        <div>
+            <CommentForm postId={postId} setPostId={setPostId}/>
+            <hr/>
+            <PostContainer setPostId={setPostId}/>
+        </div>
+    );
+};
 
 export default App;
