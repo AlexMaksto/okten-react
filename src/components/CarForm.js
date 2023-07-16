@@ -10,9 +10,7 @@ const CarForm = ({setOnSave, carForUpdate, setCarForUpdate}) => {
     });
 
     const save = (data) => {
-        if (data.id) {
-            data.id = '/' + data.id
-        }
+        data.id = carForUpdate.id ? `/${carForUpdate.id}` : ``
 
         fetch('http://owu.linkpc.net/carsAPI/v1/cars' + data.id, {
             headers: {'content-type': 'application/json'},

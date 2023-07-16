@@ -4,7 +4,7 @@ const Car = ({car, setCarForUpdate, setOnSave}) => {
 
     const {id, brand, price, year} = car;
 
-    const deleteCar = (id) => {
+    const deleteCar = () => {
 
         if (window.confirm(`Are you sure you want to destroy ${brand}?`)) {
             fetch(`http://owu.linkpc.net/carsAPI/v1/cars/${id}`,
@@ -33,7 +33,7 @@ const Car = ({car, setCarForUpdate, setOnSave}) => {
             <div>price: {price}</div>
             <div>year: {year}</div>
             <button onClick={() => setCarForUpdate(car)}>Update</button>
-            <button onClick={() => deleteCar(id)}>Delete</button>
+            <button onClick={deleteCar}>Delete</button>
         </>
     );
 };
