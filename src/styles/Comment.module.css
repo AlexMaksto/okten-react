@@ -1,0 +1,10 @@
+.Comment {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Post {
+    position: sticky;
+    height: fit-content;
+    top: 0;
+}
