@@ -1,0 +1,12 @@
+.Episode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+    border: 1px solid black;
+}
+
+.Episode > img{
+    width: 90%;
+}
