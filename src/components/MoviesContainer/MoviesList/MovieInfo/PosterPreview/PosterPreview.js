@@ -1,4 +1,4 @@
-import {imagURL} from "../../../../constans";
+import {imagURL} from "../../../../../constans";
 
 const PosterPreview = ({poster_path, original_title, height}) => {
 

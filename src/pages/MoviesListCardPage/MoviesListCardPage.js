@@ -1,6 +1,7 @@
-import {MoviesListCard} from "../../components";
+import {MoviesListCard} from "../../components/MoviesContainer/MoviesListCard/MoviesListCard";
 
 const MoviesListCardPage = () => {
+
     return (
         <div>
             <MoviesListCard/>
@@ -8,4 +9,6 @@ const MoviesListCardPage = () => {
     );
 };
 
-export {MoviesListCardPage};
+export {
+    MoviesListCardPage
+};

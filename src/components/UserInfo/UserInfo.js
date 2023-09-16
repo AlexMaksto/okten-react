@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react";
-
 import {userService} from "../../services";
 import {account} from "../../constans";
 import {UserInfoView} from "./UserInfoView/UserInfoView";

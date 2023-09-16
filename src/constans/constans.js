@@ -3,7 +3,7 @@ const maxPage = 500;
 const account = 20211174;
 
 export {
+    account,
     minPage,
-    maxPage,
-    account
+    maxPage
 }

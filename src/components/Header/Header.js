@@ -1,5 +1,4 @@
 import {NavLink} from "react-router-dom";
-
 import css from '../../styles/Header.module.css'
 import '../../styles/dark.css'
 import {UserInfo} from "../UserInfo/UserInfo";
@@ -14,6 +13,8 @@ const Header = () => {
     return (
         <div className={classNames(css.Header, `${themeContext}Header`)}>
             <NavLink to={'movies'}>Movies</NavLink>
+            <NavLink to={'genres'}>Genres</NavLink>
+            <NavLink to={'search'}>Search</NavLink>
             <UserInfo/>
             <Theme/>
         </div>

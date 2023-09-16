@@ -1,13 +1,12 @@
 import {useNavigate} from "react-router-dom";
-
-import css from "../../../styles/MovieInfo.module.css"
-import "../../../styles/dark.css"
+import css from "../../../../styles/MovieInfo.module.css"
+import "../../../../styles/dark.css"
 import {PosterPreview} from "./PosterPreview/PosterPreview";
 import {GenreBadge} from "./GenreBadge/GenreBadge";
 import {StarsRating} from "./StarsRating/StarsRating";
 import {useContext} from "react";
-import {ThemeContext} from "../../../hok";
 import classNames from "classnames";
+import {ThemeContext} from "../../../../hok";
 
 const MovieInfo = ({movie}) => {
     const {themeContext} = useContext(ThemeContext)

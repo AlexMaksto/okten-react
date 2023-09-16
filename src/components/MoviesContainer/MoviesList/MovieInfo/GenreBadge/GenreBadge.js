@@ -1,9 +1,8 @@
 import {useState, useEffect} from "react";
+import {genresService} from "../../../../../services";
 
-import {genresService} from "../../../../services";
 
 const GenreBadge = ({genre_ids}) => {
-
     const [genreName, setGenreName] = useState([])
     useEffect(() => {
         genresService.getAll()
@@ -16,7 +15,7 @@ const GenreBadge = ({genre_ids}) => {
 
         return genre_ids.map(genreId => {
             const genre = genreName.find(genre => genre.id === genreId);
-            return genre ? genre.name : 'XXX';
+            return genre ? genre.name : '';
         });
     };
 

@@ -1,9 +1,12 @@
-import css from "../../../styles/MovieListCard.module.css";
+import css from "../../../../styles/MovieListCard.module.css";
 import {PosterPreview} from "../../MoviesList/MovieInfo/PosterPreview/PosterPreview";
 import {StarsRating} from "../../MoviesList/MovieInfo/StarsRating/StarsRating";
+import {useSelector} from "react-redux";
 
-const MovieListCardView = ({movie}) => {
-    const {
+const MovieListCardView = () => {
+    const {movie} = useSelector(state => state.movies);
+
+      const {
         adult,
         backdrop_path,
         budget,

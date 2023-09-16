@@ -1,7 +1,6 @@
 import css from "../../../styles/UserInfo.module.css";
 import gravatar from "gravatar";
-import {PosterPreview} from "../../MoviesList/MovieInfo/PosterPreview/PosterPreview";
-
+import {PosterPreview} from "../../MoviesContainer/MoviesList/MovieInfo/PosterPreview/PosterPreview";
 const UserInfoView = ({userInfo}) => {
 
     const avatar =
