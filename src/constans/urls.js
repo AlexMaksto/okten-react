@@ -1,4 +1,4 @@
-const baseURL = 'https://api.themoviedb.org';
+const baseURL = process.env.REACT_APP_API_BASE_URL;
 const serverURL = '/3';
 const movies = `${serverURL}/discover/movie`;
 const movie = `${serverURL}/movie`;
